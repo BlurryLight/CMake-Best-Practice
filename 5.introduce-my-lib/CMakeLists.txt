@@ -4,9 +4,9 @@ project(HELLO LANGUAGES CXX)
 
 SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 #Module way
-find_package(HELLO_CMAKE REQUIRED MODULE)
+#find_package(HELLO_CMAKE REQUIRED MODULE)
 #Config way
-#find_package(HELLO_CMAKE::hello_cmake REQUIRED PATHS ../4.provide-my-lib)
+find_package(HELLO_CMAKE REQUIRED PATHS /mnt/Gpan/QTC++/CPPBase/Cmake-Best-Practice/4.provide-my-lib/)
 if(NOT HELLO_FOUND)
     message(FATAL_ERROR "HELLO_CMAKE Not Found!")
 endif()
